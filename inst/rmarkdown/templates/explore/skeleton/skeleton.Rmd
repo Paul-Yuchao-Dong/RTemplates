@@ -14,11 +14,12 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 extrafont::loadfonts(device = "win")
+windowsFonts("Arial_Narrow" = windowsFont("Arial Narrow"))
 options(mc.cores = parallel::detectCores())
 library(tidyverse)
-theme_set(hrbrthemes::theme_ipsum(base_family = "Arial Narrow"))
+theme_set(hrbrthemes::theme_ipsum(base_family = "Arial_Narrow"))
 ```
 
 
